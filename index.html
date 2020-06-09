@@ -1,6 +1,10 @@
-<html><body>
-<form enctype="multipart/form-data" action="cgi-bin/upscale.py" method="post">
-<p>File: <input type="file" name="file"></p>
-<p><input type="submit" value="Upload"></p>
-</form>
-</body></html>
+<html>
+<body>
+<script src="main.js"></script>
+<p>File: <input type="file" name="file" accept="image/png" id="input_img"></p>
+<p><input type="button" value="Upload" onclick="send()"></p>
+</body>
+
+<img src="wait.gif" id="result" hidden="true">
+
+</html>
